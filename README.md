@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="assets/golloom-logo.png" width="180" />
+    <img src="assets/golloom-logo.png" width="220" />
 </p>
 
 <h1 align="center">Golloom</h1>

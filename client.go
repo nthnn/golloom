@@ -34,7 +34,7 @@ type Client struct {
 	HTTPClient *http.Client
 }
 
-// NewClient creates a new instance of Client configured to communicate with the server.
+// NewClient creates a new instance of Client configured to communicate with the Ollama server.
 // It takes a base URL as a string and a duration (in minutes) for setting the HTTP client's timeout.
 // Parameters:
 //   - baseURL: A string representing the server's base URL.

@@ -4,12 +4,12 @@
 
 <h1 align="center">Golloom</h1>
 
-Golloom is a robust Go library designed to facilitate seamless integration and interaction with language models. It provides developers with a comprehensive set of tools to manage models, generate prompts, and handle responses efficiently within Go applications.
+Golloom is a robust Go library designed to facilitate seamless integration and interaction with language models via Ollama. It provides developers with a comprehensive set of tools to manage models, generate prompts, and handle responses efficiently within Go applications.
 
-- **Model Management**: Easily pull and push models to and from the server, ensuring synchronization and version control.​
-- **Prompt Generation**: Craft and send prompts to language models, receiving structured responses tailored to your application's needs.​
+- **Model Management**: Easily pull and push models to and from the Ollama server, ensuring synchronization and version control.​
+- **Prompt Generation**: Craft and send prompts to Ollama language models, receiving structured responses tailored to your application's needs.​
 - **Process Monitoring**: Monitor the status of model processes, allowing for effective resource management and debugging.​
-- **Version Retrieval**: Fetch version information of the application to maintain compatibility and track updates.
+- **Version Retrieval**: Fetch version information of the application to maintain compatibility and track updates from Ollama.
 
 ## Installation
 
@@ -36,8 +36,8 @@ import (
 )
 
 func main() {
-	// Initialize a new Golloom client to interact with the language model server.
-	// The client connects to the server at "http://localhost:11434" with a timeout of 12 seconds.
+	// Initialize a new Golloom client to interact with the Ollama language model server.
+	// The client connects to the server at "http://localhost:11434" with a timeout of 12 minutes.
 	client, err := golloom.NewClient("http://localhost:11434", 12)
 	if err != nil {
 		log.Fatalf("Error creating client: %v", err) // Log and exit if client creation fails.
